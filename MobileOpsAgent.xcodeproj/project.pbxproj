@@ -1,0 +1,187 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1 /* MobileOpsAgentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1 /* MobileOpsAgentApp.swift */; };
+		A2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2 /* Models.swift */; };
+		A3 /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3 /* GeminiService.swift */; };
+		A4 /* OpsTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4 /* OpsTools.swift */; };
+		A5 /* AgentEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5 /* AgentEngine.swift */; };
+		A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F0 /* MobileOpsAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MobileOpsAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1 /* MobileOpsAgentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileOpsAgentApp.swift; sourceTree = "<group>"; };
+		F2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F3 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		F4 /* OpsTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpsTools.swift; sourceTree = "<group>"; };
+		F5 /* AgentEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentEngine.swift; sourceTree = "<group>"; };
+		F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FW /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G = {
+			isa = PBXGroup;
+			children = (
+				S /* MobileOpsAgent */,
+				P /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		P /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0 /* MobileOpsAgent.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		S /* MobileOpsAgent */ = {
+			isa = PBXGroup;
+			children = (
+				F1 /* MobileOpsAgentApp.swift */,
+				F2 /* Models.swift */,
+				F3 /* GeminiService.swift */,
+				F4 /* OpsTools.swift */,
+				F5 /* AgentEngine.swift */,
+				F6 /* ContentView.swift */,
+			);
+			path = MobileOpsAgent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T /* MobileOpsAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1 /* Build configuration list for PBXNativeTarget "MobileOpsAgent" */;
+			buildPhases = (
+				SP /* Sources */,
+				FW /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileOpsAgent;
+			productName = MobileOpsAgent;
+			productReference = F0 /* MobileOpsAgent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PR /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C0 /* Build configuration list for PBXProject "MobileOpsAgent" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G;
+			productRefGroup = P /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T /* MobileOpsAgent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SP /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				A1 /* MobileOpsAgentApp.swift in Sources */,
+				A2 /* Models.swift in Sources */,
+				A3 /* GeminiService.swift in Sources */,
+				A4 /* OpsTools.swift in Sources */,
+				A5 /* AgentEngine.swift in Sources */,
+				A6 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mobile Ops Agent";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atreyee.mobileopsagent.gemini;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		R /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mobile Ops Agent";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atreyee.mobileopsagent.gemini;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0 /* Build configuration list for PBXProject "MobileOpsAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D /* Debug */,
+				R /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1 /* Build configuration list for PBXNativeTarget "MobileOpsAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D /* Debug */,
+				R /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PR /* Project object */;
+}
