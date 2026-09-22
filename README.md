@@ -4,7 +4,7 @@ An **LLM-powered Mobile Operations Agent** built with **SwiftUI, Swift and Gemin
 
 The agent investigates application/API issues by calling tools, analyzing results, identifying a likely issue, suggesting remediation, and verifying the result.
 
-##  Agent Workflow
+## Agent Workflow
 
    text
 User Problem
@@ -28,7 +28,7 @@ Verify
 Final Report
 ```
 
-## 🧠 How It Works
+## How It Works
 
 The user describes an application problem.
 
