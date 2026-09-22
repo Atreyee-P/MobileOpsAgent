@@ -1,8 +1,13 @@
 import SwiftUI
+
+
 @MainActor final class AgentEngine:ObservableObject {
+    
  @Published var apiKey="your key"; @Published var model="gemini-3.5-flash"; @Published var incident="Users are reporting that checkout is failing."
  @Published private(set) var steps:[AgentStep]=[]; @Published private(set) var calls:[ToolCall]=[]; @Published private(set) var answer:String?; @Published private(set) var running=false
  let system="You are a production incident agent. Investigate using tools, do not invent telemetry, correlate evidence, recommend remediation but never claim production changed, then verify."
+    
+    
  func run() async {
   guard !running else{return}; running=true; steps=[];calls=[];answer=nil; add("Understand incident",incident,.success)
   do {
@@ -29,6 +34,9 @@ import SwiftUI
   }
   running=false
  }
+    
+    
+    
  func reset(){steps=[];calls=[];answer=nil}
  private func add(_ t:String,_ d:String,_ s:StepStatus){steps.append(.init(title:t,detail:d,status:s))}
  private func title(_ n:String)->String { ["check_api_health":"Check API health","search_recent_errors":"Search recent errors","get_response_times":"Check response times","analyze_logs":"Analyze logs","propose_remediation":"Suggest remediation","verify_remediation":"Verify remediation"][n] ?? n }
